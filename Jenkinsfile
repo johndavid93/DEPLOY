@@ -6,7 +6,7 @@ node {
      git 'https://github.com/johndavid93/DEPLOY.git'
   }
   
-  //stage('Deploy') { 
-  //sh '/var/lib/jenkins/workspace/automatization/sample.war TOMCAT_DIRECTORY/webapps/'
-  //}
+  stage('Deploy') { 
+  sh 'scp /var/lib/jenkins/workspace/automatization/sample.war admin:///usr/share/tomcat/apache-tomcat-8.5.45/webapps'
+  }
 }
