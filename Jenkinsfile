@@ -3,6 +3,6 @@ node {
   
   stage('Preparation') { // for display purposes
      // Get some code a GitHub jenkins repository
-     git 'https://github.com/johndavid93/DEPLOY.git'
+     git 'http://192.168.200.52/admin/projects/devops/war.git'
   }
 }
