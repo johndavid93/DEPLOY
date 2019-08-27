@@ -5,4 +5,8 @@ node {
      // Get some code a GitHub jenkins repository
      git 'http://192.168.200.52/admin/projects/devops/war.git'
   }
+  
+  stage('Deploy') { 
+  sh '/var/lib/jenkins/workspace/automatization/sample.war TOMCAT_DIRECTORY/webapps/'
+  }
 }
