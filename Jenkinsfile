@@ -7,6 +7,6 @@ node {
   }
   
   stage('Deploy') { 
-  sh 'scp /var/lib/jenkins/workspace/automatization/sample.war admin:///usr/share/tomcat/apache-tomcat-8.5.45/webapps'
+  sh 'scp /var/lib/jenkins/workspace/automatization/sample.war /usr/share/tomcat/apache-tomcat-8.5.45/webapps'
   }
 }
